@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Index di Registrazione</title>
+
+    <link rel="stylesheet" href="Css/styleRegistrazione.css">
+    <script src="Script/scriptRegistrazione.js"> </script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="title">Sign up</div>
+    <div class="content">
+      <form id="FormDati" name="FormDati" method="POST" action="Registra.php">
+
+            <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Nome</span>
+                  <input type="text" name="Nome" class="" placeholder="Inserisci nome" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Cognome</span>
+                  <input type="text" name="Cognome" class="" placeholder="Inserisci cognome" required>
+                </div>
+                <div class="input-box">
+                  <label></label><span class="details">Email</span></label>
+                  <input type="email" name="Email" class="" placeholder="Inserisci email" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Conferma Email</span>
+                  <input type="email" name="ConfermaEmail" class="" placeholder="Conferma email" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Username</span>
+                  <input type="text" name="Username" class="" placeholder="Inserisci username" required>
+                </div>
+
+                <div class="input-box">
+                    <div class="Sesso-details">
+
+                        <input type="radio" value="maschio" name="Sesso" id="Maschio" required>
+                        <input type="radio" value="femmina" name="Sesso" id="Femmina" required>
+
+                        <span class="Sesso-title">Sesso</span>
+
+                        <div class="category">
+                            <label for="Maschio">
+                                <span class="dot one"></span>
+                                <span class="Sesso">Maschio</span>
+                            </label>
+                            <label for="Femmina">
+                                <span class="dot two"></span>
+                                <span class="Sesso">Femmina</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                  <span class="details">Password</span>
+                  <input type="text" name="Password" class="" placeholder="Inserisci password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Conferma Password</span>
+                    <input type="text" name="ConfermaPassword" class="" placeholder="Conferma password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Data di Nascita</span>
+                    <input type="text" name="DataNascita" class="" placeholder="gg/mm/aaaa" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Cellulare</span>
+                    <input type="text" name="Cellulare" class="" placeholder="Cellulare (opzionale)" >
+                </div>
+            </div>
+
+        <div class="button">
+          <input value="Verifica" onclick="ControllaForm()">
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
